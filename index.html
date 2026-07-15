@@ -9,6 +9,10 @@
 <meta property="og:description" content="The cap never makes it to recycling. Join the movement to keep caps attached — tethered caps for India.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.tetheredcap.org/">
+<meta property="og:image" content="https://www.tetheredcap.org/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%232ab574'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23153824' stroke-width='2' stroke-dasharray='2 2.4'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/main.css">
 </head>
@@ -21,8 +25,42 @@
     <button class="pill pill-solid bar-cta" data-goto="#pledge"><span id="barCount">12,437</span> attached — join them</button>
   </header>
 
-  <!-- ACT: the love story / unscrewing -->
-  <section class="scene hero" id="hero">
+  <!-- ACT 1+2: one continuous shot — the unscrewing, then the camera follows the cap down -->
+  <section class="scene hero" id="story">
+    <!-- the world that passes as the cap falls -->
+    <div class="fall-world" id="fallWorld">
+      <div class="layer street"><img class="layer-img" src="assets/img/generated/street-web.jpg" alt="" loading="eager" decoding="async"></div>
+      <svg class="layer drain" viewBox="0 0 1200 160" preserveAspectRatio="xMidYMid meet">
+        <rect x="330" y="40" width="540" height="60" rx="14" fill="#153824"/>
+        <g fill="#f3ebdf" opacity=".92">
+          <rect x="360" y="52" width="26" height="36" rx="8"/><rect x="412" y="52" width="26" height="36" rx="8"/>
+          <rect x="464" y="52" width="26" height="36" rx="8"/><rect x="516" y="52" width="26" height="36" rx="8"/>
+          <rect x="568" y="52" width="26" height="36" rx="8"/><rect x="620" y="52" width="26" height="36" rx="8"/>
+          <rect x="672" y="52" width="26" height="36" rx="8"/><rect x="724" y="52" width="26" height="36" rx="8"/>
+          <rect x="776" y="52" width="26" height="36" rx="8"/><rect x="828" y="52" width="26" height="36" rx="8"/>
+        </g>
+      </svg>
+      <div class="layer river"><img class="layer-img" src="assets/img/generated/river-web.jpg" alt="" loading="eager" decoding="async"></div>
+      <svg class="layer sea" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid meet">
+        <g opacity=".85">
+          <circle cx="180" cy="90" r="9" fill="none" stroke="#bed2eb" stroke-width="3"/>
+          <circle cx="240" cy="180" r="6" fill="none" stroke="#bed2eb" stroke-width="3"/>
+          <circle cx="150" cy="280" r="12" fill="none" stroke="#bed2eb" stroke-width="3"/>
+          <circle cx="1030" cy="140" r="8" fill="none" stroke="#bed2eb" stroke-width="3"/>
+          <circle cx="960" cy="260" r="5" fill="none" stroke="#bed2eb" stroke-width="3"/>
+        </g>
+        <g fill="#bed2eb" opacity=".8">
+          <path d="M420,120 q30,-24 60,0 q-30,24 -60,0 Z M480,120 l22,-14 l0,28 Z"/>
+          <path d="M760,330 q26,-20 52,0 q-26,20 -52,0 Z M812,330 l19,-12 l0,24 Z"/>
+        </g>
+        <g stroke="#153824" stroke-width="3">
+          <rect x="300" y="430" width="44" height="26" rx="7" fill="#2ab574" transform="rotate(-14 322 443)"/>
+          <rect x="640" y="452" width="44" height="26" rx="7" fill="#bed2eb" transform="rotate(9 662 465)"/>
+          <rect x="880" y="436" width="44" height="26" rx="7" fill="#f3ebdf" transform="rotate(-6 902 449)"/>
+        </g>
+      </svg>
+    </div>
+
     <p class="kicker">The Tethered Cap Mandate&ensp;·&ensp;India</p>
     <div class="hero-stage">
       <h1 class="display hero-line" id="line1">This is<br>a love story.</h1>
@@ -53,78 +91,6 @@
       <p class="hero-note" id="heroNote">Every bottle you've ever finished ended exactly like this.</p>
     </div>
     <p class="scroll-cue" id="cue">scroll<span class="cue-line"></span></p>
-  </section>
-
-  <!-- ACT: the fall -->
-  <section class="scene fall" id="fall">
-    <div class="fall-world" id="fallWorld">
-      <!-- street level -->
-      <svg class="layer street" viewBox="0 0 1200 240" preserveAspectRatio="xMidYMax meet">
-        <line x1="0" y1="238" x2="1200" y2="238" stroke="#153824" stroke-width="4"/>
-        <g id="binGroup">
-          <path d="M250,238 L262,150 L358,150 L370,238 Z" fill="#bece9f" stroke="#153824" stroke-width="4" stroke-linejoin="round"/>
-          <rect x="240" y="132" width="140" height="20" rx="8" fill="#2ab574" stroke="#153824" stroke-width="4"/>
-          <path d="M282,168 L338,168 M286,196 L334,196" stroke="#153824" stroke-width="3" opacity=".4"/>
-          <!-- bottle peeking from bin -->
-          <g transform="translate(300,96) rotate(18)">
-            <rect x="-9" y="-14" width="18" height="10" rx="4" fill="rgba(190,210,235,.9)" stroke="#153824" stroke-width="3"/>
-            <rect x="-14" y="-4" width="28" height="52" rx="10" fill="rgba(190,210,235,.7)" stroke="#153824" stroke-width="3"/>
-          </g>
-        </g>
-        <g id="truck">
-          <rect x="760" y="150" width="200" height="70" rx="10" fill="#bece9f" stroke="#153824" stroke-width="4"/>
-          <rect x="960" y="176" width="70" height="44" rx="8" fill="#2ab574" stroke="#153824" stroke-width="4"/>
-          <circle cx="810" cy="226" r="16" fill="#153824"/><circle cx="920" cy="226" r="16" fill="#153824"/><circle cx="1000" cy="226" r="16" fill="#153824"/>
-          <path d="M790,170 q14,16 0,32 M816,170 q14,16 0,32 M842,170 q14,16 0,32" stroke="#153824" stroke-width="3.5" fill="none" opacity=".55"/>
-        </g>
-      </svg>
-      <!-- the drain -->
-      <svg class="layer drain" viewBox="0 0 1200 160" preserveAspectRatio="xMidYMid meet">
-        <rect x="330" y="40" width="540" height="60" rx="14" fill="#153824"/>
-        <g fill="#f3ebdf" opacity=".92">
-          <rect x="360" y="52" width="26" height="36" rx="8"/><rect x="412" y="52" width="26" height="36" rx="8"/>
-          <rect x="464" y="52" width="26" height="36" rx="8"/><rect x="516" y="52" width="26" height="36" rx="8"/>
-          <rect x="568" y="52" width="26" height="36" rx="8"/><rect x="620" y="52" width="26" height="36" rx="8"/>
-          <rect x="672" y="52" width="26" height="36" rx="8"/><rect x="724" y="52" width="26" height="36" rx="8"/>
-          <rect x="776" y="52" width="26" height="36" rx="8"/><rect x="828" y="52" width="26" height="36" rx="8"/>
-        </g>
-      </svg>
-      <!-- the river -->
-      <svg class="layer river" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet">
-        <path d="M0,80 Q60,50 120,80 T240,80 T360,80 T480,80 T600,80 T720,80 T840,80 T960,80 T1080,80 T1200,80" fill="none" stroke="#f3ebdf" stroke-width="6" stroke-linecap="round" opacity=".8"/>
-        <path d="M0,170 Q60,140 120,170 T240,170 T360,170 T480,170 T600,170 T720,170 T840,170 T960,170 T1080,170 T1200,170" fill="none" stroke="#f3ebdf" stroke-width="5" stroke-linecap="round" opacity=".45"/>
-        <path d="M0,250 Q60,220 120,250 T240,250 T360,250 T480,250 T600,250 T720,250 T840,250 T960,250 T1080,250 T1200,250" fill="none" stroke="#f3ebdf" stroke-width="4" stroke-linecap="round" opacity=".25"/>
-      </svg>
-      <!-- the sea -->
-      <svg class="layer sea" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid meet">
-        <g opacity=".85">
-          <circle cx="180" cy="90" r="9" fill="none" stroke="#bed2eb" stroke-width="3"/>
-          <circle cx="240" cy="180" r="6" fill="none" stroke="#bed2eb" stroke-width="3"/>
-          <circle cx="150" cy="280" r="12" fill="none" stroke="#bed2eb" stroke-width="3"/>
-          <circle cx="1030" cy="140" r="8" fill="none" stroke="#bed2eb" stroke-width="3"/>
-          <circle cx="960" cy="260" r="5" fill="none" stroke="#bed2eb" stroke-width="3"/>
-        </g>
-        <g fill="#bed2eb" opacity=".8">
-          <path d="M420,120 q30,-24 60,0 q-30,24 -60,0 Z M480,120 l22,-14 l0,28 Z" transform="translate(0,0)"/>
-          <path d="M760,330 q26,-20 52,0 q-26,20 -52,0 Z M812,330 l19,-12 l0,24 Z"/>
-        </g>
-        <!-- other lost caps resting -->
-        <g stroke="#153824" stroke-width="3">
-          <rect x="300" y="430" width="44" height="26" rx="7" fill="#2ab574" transform="rotate(-14 322 443)"/>
-          <rect x="640" y="452" width="44" height="26" rx="7" fill="#bed2eb" transform="rotate(9 662 465)"/>
-          <rect x="880" y="436" width="44" height="26" rx="7" fill="#f3ebdf" transform="rotate(-6 902 449)"/>
-        </g>
-      </svg>
-    </div>
-
-    <!-- the falling cap, stays centred while the world scrolls past -->
-    <svg class="fall-cap" id="fallCap" viewBox="0 0 100 64">
-      <rect x="8" y="6" width="84" height="52" rx="11" fill="#2ab574" stroke="#153824" stroke-width="4"/>
-      <g stroke="#153824" stroke-width="3" opacity=".35">
-        <line x1="24" y1="12" x2="24" y2="52"/><line x1="38" y1="12" x2="38" y2="52"/>
-        <line x1="52" y1="12" x2="52" y2="52"/><line x1="66" y1="12" x2="66" y2="52"/><line x1="80" y1="12" x2="80" y2="52"/>
-      </g>
-    </svg>
 
     <div class="beat b1"><p>You drank. You binned it.<br>The bottle went off to its second life.</p></div>
     <div class="beat b2"><p class="display beat-big">The cap<br>never made it.</p></div>
@@ -133,18 +99,13 @@
     <div class="beat b5"><p>Bottles sink and get collected.<br><strong>Caps float. Caps escape.</strong></p></div>
   </section>
 
+
   <!-- ACT: the deep — sincere beat -->
   <section class="deep" id="deep">
     <div class="col">
       <p class="display deep-huge">2–3×</p>
       <p class="deep-lede">Caps are found in nature <em>two to three times more often</em> than the bottles they came from.<sup>1</sup></p>
-      <svg class="turtle" id="turtle" viewBox="0 0 260 150" aria-label="A sea turtle silhouette">
-        <ellipse cx="130" cy="80" rx="70" ry="44" fill="rgba(190,210,235,.35)"/>
-        <path d="M130,36 C168,36 200,56 200,80 C200,104 168,124 130,124 C92,124 60,104 60,80 C60,56 92,36 130,36 Z" fill="none" stroke="#bed2eb" stroke-width="4"/>
-        <circle cx="216" cy="72" r="16" fill="rgba(190,210,235,.35)" stroke="#bed2eb" stroke-width="4"/>
-        <path d="M84,50 Q52,28 40,40 Q52,58 78,62 M84,110 Q52,132 40,120 Q52,102 78,98 M176,118 Q186,138 200,134 M176,44 Q186,24 200,28" fill="none" stroke="#bed2eb" stroke-width="4" stroke-linecap="round"/>
-        <path d="M100,64 L160,64 M92,82 L168,82 M100,100 L160,100 M118,48 L118,112 M144,48 L144,112" stroke="#bed2eb" stroke-width="3" opacity=".5"/>
-      </svg>
+      
       <div class="deep-facts">
         <p>To a turtle, a floating cap looks like food. Caps rank in the <strong>top five deadliest</strong> ocean plastics for marine animals.<sup>2</sup></p>
         <p>Volunteers have picked <strong>7.3 million lids</strong> off the world's beaches — and they're still counting.<sup>3</sup></p>
@@ -157,22 +118,9 @@
   <section class="scene fix" id="fix">
     <div class="fix-stage">
       <h2 class="display fix-line" id="fixLine">Now imagine<br>it held on.</h2>
-      <svg class="tbottle" id="tetherSvg" viewBox="0 0 340 360" aria-label="A bottle whose cap stays attached by a tether">
-        <rect x="139" y="176" width="62" height="12" rx="6" fill="#2ab574" stroke="#153824" stroke-width="3"/>
-        <path d="M144,188 L196,188 L196,222 C196,226 198,230 202,234 C216,248 228,270 228,308 L228,340 L112,340 L112,308 C112,270 124,248 138,234 C142,230 144,226 144,222 Z"
-              fill="rgba(190,210,235,.42)" stroke="#153824" stroke-width="4" stroke-linejoin="round"/>
-        <line x1="148" y1="194" x2="192" y2="200" stroke="#153824" stroke-width="2.5" opacity=".45"/>
-        <line x1="148" y1="204" x2="192" y2="210" stroke="#153824" stroke-width="2.5" opacity=".45"/>
-        <path id="tetherPath" d="M198,180 C230,168 244,146 240,124" fill="none" stroke="#153824" stroke-width="5" stroke-linecap="round"/>
-        <g id="tetherCap" transform="rotate(38 242 122)">
-          <rect x="242" y="70" width="52" height="74" rx="10" fill="#2ab574" stroke="#153824" stroke-width="3.5"/>
-          <g stroke="#153824" stroke-width="2.5" opacity=".35">
-            <line x1="248" y1="82" x2="288" y2="82"/><line x1="248" y1="94" x2="288" y2="94"/>
-            <line x1="248" y1="106" x2="288" y2="106"/><line x1="248" y1="118" x2="288" y2="118"/><line x1="248" y1="130" x2="288" y2="130"/>
-          </g>
-        </g>
-        <circle cx="240" cy="124" r="0" id="snapRing" fill="none" stroke="#2ab574" stroke-width="3" opacity="0"/>
-      </svg>
+      <figure class="tbottle fix-diagram">
+        <img src="assets/img/generated/diagram-web.jpg" alt="A tethered cap in three stages: closed, flipping open on its hinge, locked back at 180 degrees" loading="lazy" decoding="async">
+      </figure>
       <div class="fix-copy" id="fixCopy">
         <p>It exists. It's called a <strong>tethered cap</strong> — it flips back, locks, and never lets go.</p>
         <p>The EU made it the law on <strong>3&nbsp;July&nbsp;2024</strong>. Coca-Cola and Pepsi already make these — for Europeans.<sup>4</sup></p>
@@ -239,21 +187,60 @@
     <div class="col">
       <h2 class="display wall-title">The attached.</h2>
       <div class="wall-grid" id="wallGrid"></div>
+      <div class="wall-share">
+        <p class="display wall-kicker">Attachment is contagious.<br>Pass it on.</p>
+        <div class="share-row">
+          <a class="pill" href="https://wa.me/?text=Caps%20shouldn%27t%20leave%20their%20bottles.%20I%20just%20attached%20myself%20to%20the%20Tethered%20Cap%20Mandate%20%E2%80%94%20join%20me%3A%20https%3A%2F%2Fwww.tetheredcap.org" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="pill" href="https://twitter.com/intent/tweet?text=Caps%20shouldn%27t%20leave%20their%20bottles.%20I%27m%20attached%20%E2%80%94%20are%20you%3F&amp;url=https%3A%2F%2Fwww.tetheredcap.org&amp;hashtags=IAmAttached" target="_blank" rel="noopener">X</a>
+          <a class="pill" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.tetheredcap.org" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- footer -->
+  <!-- footer — Greener Earth Foundation lockup -->
   <footer class="foot">
-    <div class="col">
-      <p class="display foot-line">Attachment is<br>contagious.</p>
-      <p class="foot-share">Tell one person. Or post your card and tell all of them.</p>
-      <img src="assets/img/gef-logo-cream.png" alt="Greener Earth Foundation" class="foot-logo">
-      <p class="foot-meta">A campaign by Greener Earth Foundation · Section 8 nonprofit · 12A &amp; 80G · Mumbai, India<br>
-        <a href="https://greener.earth" target="_blank" rel="noopener">greener.earth</a> ·
-        <a href="https://greener.earth/tethered-cap-mandate.html" target="_blank" rel="noopener">the NGT case</a> ·
-        “Let's build a healthier Earth together.”</p>
-      <p class="foot-sources">Sources — 1. European Commission, Single-Use Plastics, 2025 · 2. Ocean Conservancy, 2025 · 3. Ocean Conservancy International Coastal Cleanup, 1986–2023 · 4. Directive (EU) 2019/904 Art. 6; Coca-Cola GB, 2024. Preview build: pledges stay in your browser; nothing is uploaded.</p>
+    <div class="foot-mark" aria-hidden="true"></div>
+    <div class="foot-inner">
+      <div class="foot-left">
+        <img src="assets/img/gef-logo-cream.png" alt="Greener Earth Foundation" class="foot-logo">
+        <p class="display foot-line">Let's build a healthier<br>Earth together.</p>
+      </div>
+      <div class="foot-right">
+        <nav class="foot-nav" aria-label="Greener Earth">
+          <a href="https://greener.earth" target="_blank" rel="noopener">Home</a>
+          <a href="https://greener.earth/below2.html" target="_blank" rel="noopener">Below2°</a>
+          <a href="https://greener.earth/tethered-cap-mandate.html" target="_blank" rel="noopener">Tethered Cap Mandate</a>
+          <a href="https://greener.earth/climate-change-explained.html" target="_blank" rel="noopener">Climate Guide</a>
+          <a href="https://greener.earth/media.html" target="_blank" rel="noopener">Media</a>
+          <a href="https://greener.earth/work-with-us.html" target="_blank" rel="noopener">Work with us</a>
+          <a href="https://greener.earth/disclaimer.html" target="_blank" rel="noopener">Disclaimer</a>
+          <a href="https://greener.earth/privacy.html" target="_blank" rel="noopener">Privacy</a>
+          <a href="https://greener.earth/contact.html" target="_blank" rel="noopener">Contact</a>
+        </nav>
+        <div class="foot-social">
+          <a href="https://instagram.com/greenerearthorg" target="_blank" rel="noopener" aria-label="Greener Earth on Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .49 1.4.92.43.43.7.85.92 1.4.17.43.36 1.06.42 2.24.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.06 1.18-.25 1.81-.42 2.24-.22.56-.49.98-.92 1.4-.42.43-.84.7-1.4.92-.43.17-1.06.36-2.24.42-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.18-.06-1.81-.25-2.24-.42a3.8 3.8 0 0 1-1.4-.92 3.8 3.8 0 0 1-.92-1.4c-.17-.43-.36-1.06-.42-2.24C2.2 15.58 2.2 15.2 2.2 12s0-3.58.07-4.85c.06-1.18.25-1.81.42-2.24.22-.56.49-.98.92-1.4.42-.43.84-.7 1.4-.92.43-.17 1.06-.36 2.24-.42C8.42 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.5 0-4.74.07-1.1.05-1.7.24-2.1.39-.52.2-.9.45-1.29.84-.39.39-.63.76-.84 1.29-.15.4-.34 1-.39 2.1C2.6 8.5 2.6 8.85 2.6 12s0 3.5.07 4.74c.05 1.1.24 1.7.39 2.1.2.52.45.9.84 1.29.39.39.76.63 1.29.84.4.15 1 .34 2.1.39 1.24.06 1.6.07 4.74.07s3.5 0 4.74-.07c1.1-.05 1.7-.24 2.1-.39.52-.2.9-.45 1.29-.84.39-.39.63-.76.84-1.29.15-.4.34-1 .39-2.1.06-1.24.07-1.6.07-4.74s0-3.5-.07-4.74c-.05-1.1-.24-1.7-.39-2.1a3.5 3.5 0 0 0-.84-1.29 3.5 3.5 0 0 0-1.29-.84c-.4-.15-1-.34-2.1-.39C15.5 4 15.15 4 12 4Zm0 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Zm5.2-3.1a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/company/greenerearthorg" target="_blank" rel="noopener" aria-label="Greener Earth on LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.49 2.49 0 0 1 2.5 6a2.49 2.49 0 0 1 0-5 2.49 2.49 0 0 1 2.48 2.5ZM.24 8.31h4.52V22.5H.24V8.31Zm7.4 0h4.33v1.94h.06c.6-1.14 2.08-2.35 4.28-2.35 4.57 0 5.42 3.01 5.42 6.92v7.68h-4.52v-6.81c0-1.63-.03-3.72-2.27-3.72-2.27 0-2.61 1.77-2.61 3.6v6.93H7.64V8.31Z" transform="translate(0.7,-1)"/></svg>
+          </a>
+          <a href="https://facebook.com/greenerearthorg" target="_blank" rel="noopener" aria-label="Greener Earth on Facebook">
+            <svg viewBox="0 0 24 24"><path d="M13.5 21.9v-8.4h2.82l.42-3.28H13.5V8.13c0-.95.26-1.6 1.63-1.6h1.73v-2.9c-.3-.05-1.33-.13-2.53-.13-2.5 0-4.21 1.53-4.21 4.33v2.4H7.3v3.28h2.82v8.4h3.38Z"/></svg>
+          </a>
+          <a href="https://x.com/greenerearthorg" target="_blank" rel="noopener" aria-label="Greener Earth on X">
+            <svg viewBox="0 0 24 24"><path d="M17.75 3h3.07l-6.71 7.67L22 21h-6.18l-4.84-6.33L5.44 21H2.37l7.18-8.2L2 3h6.34l4.37 5.78L17.75 3Zm-1.08 16.16h1.7L7.1 4.74H5.28l11.39 14.42Z"/></svg>
+          </a>
+        </div>
+        <hr class="foot-hr">
+        <div class="foot-legal">
+          <span>© 2026 Greener Earth Foundation</span>
+          <span>Section 8 nonprofit · 12A &amp; 80G</span>
+          <span>Mumbai, India</span>
+        </div>
+      </div>
     </div>
+    <p class="foot-sources">A campaign by <a href="https://greener.earth" target="_blank" rel="noopener">Greener Earth Foundation</a> · <a href="https://greener.earth/tethered-cap-mandate.html" target="_blank" rel="noopener">the NGT case</a>. Sources — 1. European Commission, Single-Use Plastics, 2025 · 2. Ocean Conservancy, 2025 · 3. Ocean Conservancy International Coastal Cleanup, 1986–2023 · 4. Directive (EU) 2019/904 Art. 6; Coca-Cola GB, 2024. Preview build: pledges stay in your browser; nothing is uploaded.</p>
   </footer>
 
 </div>
